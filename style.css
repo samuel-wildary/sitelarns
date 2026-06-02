@@ -287,6 +287,18 @@ p {
     gap: 12px;
 }
 
+.logo-img {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-icon {
     font-size: 2.2rem;
     color: var(--magenta);
