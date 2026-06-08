@@ -886,6 +886,7 @@ p {
     color: var(--navy);
     box-shadow: var(--shadow-md);
     margin-top: 10px;
+    align-self: center;
 }
 
 .quality-cert-badge i {
@@ -1191,6 +1192,9 @@ p {
 
 .footer-legal a {
     margin-left: 20px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-legal a:hover {
@@ -1676,4 +1680,85 @@ p {
         right: 20px;
         font-size: 1rem;
     }
+}
+/* Legal Modal */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.custom-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-modal {
+    background: var(--bg-white);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.custom-modal-overlay.active .custom-modal {
+    transform: scale(1);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--navy);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: var(--magenta);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.modal-icon {
+    font-size: 2rem;
+    color: var(--teal);
+}
+
+.modal-body p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.modal-body h4 {
+    color: var(--teal);
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-family: var(--font-serif);
 }

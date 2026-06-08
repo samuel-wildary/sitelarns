@@ -524,9 +524,9 @@
                 <div class="footer-col">
                     <h4 class="serif-title text-white mb-4 footer-heading">Área de Implementação</h4>
                     <ul class="footer-links">
-                        <li><a href="#"><strong>Tourencinho</strong> — Sede e Lar N.S. do Extremo</a></li>
-                        <li><a href="#"><strong>Ferreirinho</strong> — Lar Pe. Manuel do Couto</a></li>
-                        <li><a href="#"><strong>Em desenvolvimento</strong> — Creche</a></li>
+                        <li><strong>Tourencinho</strong> &mdash; Sede e Lar N.S. do Extremo</li>
+                        <li><strong>Ferreirinho</strong> &mdash; Lar Pe. Manuel do Couto</li>
+                        <li><strong>Em desenvolvimento</strong> &mdash; Creche</li>
                     </ul>
                 </div>
                 
@@ -563,9 +563,9 @@
             <div class="footer-bottom mt-5">
                 <p>&copy; 2026 Centro Social Nossa Senhora do Extremo. IPSS. Todos os direitos reservados.</p>
                 <div class="footer-legal">
-                    <a href="#">Políticas de Utilização</a>
-                    <a href="#">Políticas de Privacidade</a>
-                    <a href="#">RGPD</a>
+                    <a href="#" class="legal-modal-trigger" data-title="Políticas de Utilização">Políticas de Utilização</a>
+                    <a href="#" class="legal-modal-trigger" data-title="Políticas de Privacidade">Políticas de Privacidade</a>
+                    <a href="#" class="legal-modal-trigger" data-title="RGPD">RGPD</a>
                 </div>
             </div>
         </div>
@@ -573,6 +573,21 @@
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Legal Modal -->
+    <div class="custom-modal-overlay" id="legalModal">
+        <div class="custom-modal">
+            <button class="close-modal" id="closeLegalModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <i class="fa-solid fa-file-shield modal-icon pulse"></i>
+                <h3 class="serif-title text-navy" id="legalModalTitle">Documento</h3>
+            </div>
+            <div class="modal-body">
+                <p>Este documento está atualmente a ser atualizado para garantir a máxima transparência e conformidade com as normas em vigor. Será disponibilizado muito em breve.</p>
+                <p>O <strong>Centro Social Nossa Senhora do Extremo</strong> tem como prioridade a segurança e a privacidade de todos os seus utentes e parceiros.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
