@@ -837,24 +837,69 @@ p {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    background-color: var(--bg-light);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    height: auto;
+}
+
+.quality-img-container {
     height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
 }
 
-.quality-image-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.5) 100%);
-    pointer-events: none;
-}
-
-.parallax-img {
+.quality-img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
+}
+
+.quality-text-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.quality-text-col p {
+    color: var(--navy);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.quality-cert-badge {
+    background-color: var(--bg-white);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    box-shadow: var(--shadow-md);
+    margin-top: 10px;
+}
+
+.quality-cert-badge i {
+    font-size: 2.2rem;
+    color: var(--teal);
+    margin-bottom: 4px;
+}
+
+.quality-cert-badge span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .cert-badge {
@@ -1260,6 +1305,19 @@ p {
         gap: 20px;
         text-align: center;
     }
+
+    .quality-image-wrapper {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    .quality-img-container {
+        height: 350px;
+    }
+    .quality-text-col {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1267,8 +1325,8 @@ p {
         font-size: 2.8rem;
     }
 
-    .quality-image-wrapper {
-        height: 350px;
+    .quality-img-container {
+        height: 300px;
     }
 
     .cert-badge {
