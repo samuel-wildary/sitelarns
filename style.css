@@ -1762,3 +1762,15 @@ p {
     margin-bottom: 8px;
     font-family: var(--font-serif);
 }
+.quality-badges-row {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    margin-top: 15px;
+}
+.quality-badges-row .quality-cert-badge {
+    align-self: auto;
+    margin-top: 0;
+    width: 120px;
+    height: 120px;
+}
