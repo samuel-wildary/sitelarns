@@ -602,15 +602,88 @@
     <div class="custom-modal-overlay" id="orgaosModal">
         <div class="custom-modal" style="max-width: 800px; width: 95%;">
             <button class="close-modal" id="closeOrgaosModal"><i class="fa-solid fa-xmark"></i></button>
-            <div class="modal-header">
+            <div class="modal-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 15px;">
                 <h3 class="serif-title text-navy">Órgãos Sociais</h3>
             </div>
-            <div class="modal-body text-center">
-                <div id="orgaosModalPlaceholder" style="display: none; padding: 40px 20px; border: 2px dashed var(--border-color); border-radius: 8px;">
-                    <i class="fa-regular fa-image" style="font-size: 3rem; color: var(--text-light); margin-bottom: 15px; display: block;"></i>
-                    <p style="color: var(--text-main); font-weight: 500; margin-bottom: 5px;">Imagem dos Órgãos Sociais</p>
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto; padding-right: 5px;">
+                <div class="orgaos-container">
+                    <!-- Assembleia Geral -->
+                    <div class="orgaos-section">
+                        <h4 class="orgaos-section-title">ASSEMBLEIA GERAL</h4>
+                        <div class="orgaos-table">
+                            <div class="orgaos-row header">
+                                <div class="orgaos-col name-col">NOME</div>
+                                <div class="orgaos-col role-col">FUNÇÃO</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">MANUEL AGOSTINHO BORGES MACHADO</div>
+                                <div class="orgaos-col role-col">PRESIDENTE</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">ANTÓNIO RAPOSO MOTA</div>
+                                <div class="orgaos-col role-col">1º SECRETÁRIO</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">JOSÉ MANUEL LAMEIRA CARREIRA</div>
+                                <div class="orgaos-col role-col">2º SECRETÁRIO</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direção -->
+                    <div class="orgaos-section">
+                        <h4 class="orgaos-section-title">DIREÇÃO</h4>
+                        <div class="orgaos-table">
+                            <div class="orgaos-row header">
+                                <div class="orgaos-col name-col">NOME</div>
+                                <div class="orgaos-col role-col">FUNÇÃO</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">CARLOS SILVINO RODRIGUES MACHADO</div>
+                                <div class="orgaos-col role-col">PRESIDENTE</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">LETÍCIA LAMEIRA CARRIL FARIA</div>
+                                <div class="orgaos-col role-col">VICE-PRESIDENTE</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">PEDRO JORGE CARREIRA CARRIL</div>
+                                <div class="orgaos-col role-col">SECRETÁRIO</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">MARIA ELISABETE LAMEIRA CARREIRA</div>
+                                <div class="orgaos-col role-col">TESOUREIRA</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">JOANA FILIPA COSTA BORGES</div>
+                                <div class="orgaos-col role-col">VOGAL</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conselho Fiscal -->
+                    <div class="orgaos-section">
+                        <h4 class="orgaos-section-title">CONSELHO FISCAL</h4>
+                        <div class="orgaos-table">
+                            <div class="orgaos-row header">
+                                <div class="orgaos-col name-col">NOME</div>
+                                <div class="orgaos-col role-col">FUNÇÃO</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">MARIA ELISABETE DIAS MACHADO BARREIRO</div>
+                                <div class="orgaos-col role-col">PRESIDENTE</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">SANDRA CRISTINA CARRIL DA COSTA</div>
+                                <div class="orgaos-col role-col">1º VOGAL</div>
+                            </div>
+                            <div class="orgaos-row">
+                                <div class="orgaos-col name-col">JOSÉ MANUEL LAMEIRA RODRIGUES</div>
+                                <div class="orgaos-col role-col">2º VOGAL</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img id="orgaosModalImg" src="images/orgaos_sociais.png" alt="Órgãos Sociais" style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
             </div>
         </div>
     </div>

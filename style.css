@@ -1824,3 +1824,94 @@ p {
 .livro-rec:hover {
     opacity: 1;
 }
+
+/* Órgãos Sociais Modal Styling */
+.orgaos-container {
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.orgaos-section {
+    margin-bottom: 25px;
+}
+
+.orgaos-section:last-child {
+    margin-bottom: 5px;
+}
+
+.orgaos-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.orgaos-table {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.orgaos-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-white);
+    transition: background-color 0.2s ease;
+}
+
+.orgaos-row:last-child {
+    border-bottom: none;
+}
+
+.orgaos-row:hover:not(.header) {
+    background-color: var(--bg-light);
+}
+
+.orgaos-row.header {
+    background-color: #a2d169; /* Verde oliva suave da imagem original */
+    color: var(--navy-dark);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+.orgaos-col {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+}
+
+.name-col {
+    flex: 2;
+    font-weight: 500;
+    color: var(--navy-dark);
+}
+
+.role-col {
+    flex: 1.2;
+    text-align: right;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.orgaos-row.header .role-col {
+    color: var(--navy-dark);
+}
+
+/* Responsividade para tabelas */
+@media (max-width: 576px) {
+    .orgaos-col {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    .orgaos-section-title {
+        font-size: 1rem;
+    }
+}
+
