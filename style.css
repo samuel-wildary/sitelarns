@@ -263,6 +263,16 @@ p {
     background-color: var(--navy);
 }
 
+.btn-navy {
+    background-color: var(--navy);
+    color: var(--text-white);
+}
+
+.btn-navy:hover {
+    background-color: var(--teal);
+    color: var(--navy-dark);
+}
+
 .btn-teal-outline {
     background-color: transparent;
     border: 2px solid var(--teal);
