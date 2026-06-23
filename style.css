@@ -327,6 +327,7 @@ p {
     display: flex;
     gap: 40px;
     margin-left: auto;
+    align-items: center;
 }
 
 .info-block {
@@ -349,6 +350,12 @@ p {
 
 .info-block:first-child::before {
     display: none;
+}
+
+.info-block:only-child {
+    padding-left: 0;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .info-block strong {
