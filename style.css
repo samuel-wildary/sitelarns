@@ -1805,3 +1805,12 @@ p {
         font-size: 0.85rem;
     }
 }
+
+.livro-rec {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+.livro-rec:hover {
+    opacity: 1;
+}
