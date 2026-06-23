@@ -229,3 +229,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Órgãos Sociais Modal Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const openOrgaosBtn = document.getElementById('openOrgaosModal');
+    const orgaosModal = document.getElementById('orgaosModal');
+    const closeOrgaosBtn = document.getElementById('closeOrgaosModal');
+    const orgaosModalImg = document.getElementById('orgaosModalImg');
+    const orgaosModalPlaceholder = document.getElementById('orgaosModalPlaceholder');
+
+    if (openOrgaosBtn && orgaosModal && closeOrgaosBtn) {
+        openOrgaosBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            orgaosModal.classList.add('active');
+        });
+
+        closeOrgaosBtn.addEventListener('click', () => {
+            orgaosModal.classList.remove('active');
+        });
+
+        orgaosModal.addEventListener('click', (e) => {
+            if (e.target === orgaosModal) {
+                orgaosModal.classList.remove('active');
+            }
+        });
+
+        if (orgaosModalImg && orgaosModalPlaceholder) {
+            orgaosModalImg.onerror = () => {
+                orgaosModalImg.style.display = 'none';
+                orgaosModalPlaceholder.style.display = 'block';
+            };
+            
+            orgaosModalImg.onload = () => {
+                orgaosModalImg.style.display = 'block';
+                orgaosModalPlaceholder.style.display = 'none';
+            };
+            
+            // Check if the image failed to load initially
+            if (orgaosModalImg.complete && orgaosModalImg.naturalWidth === 0) {
+                orgaosModalImg.style.display = 'none';
+                orgaosModalPlaceholder.style.display = 'block';
+            }
+        }
+    }
+});

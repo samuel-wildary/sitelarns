@@ -118,39 +118,13 @@
                         <li><div class="check-icon"><i class="fa-solid fa-check"></i></div> <div><strong>2026</strong> — Projeto de abertura da Creche</div></li>
                     </ul>
 
+                    <div class="mt-4 mb-4">
+                        <button id="openOrgaosModal" class="btn btn-teal">
+                            <i class="fa-solid fa-users me-2"></i> Órgãos Sociais
+                        </button>
+                    </div>
+
                     <div class="accordion-wrapper mt-4">
-                        <div class="accordion-item">
-                            <button class="accordion-header">Órgãos Sociais <span class="acc-icon"><i class="fa-solid fa-chevron-down"></i></span></button>
-                            <div class="accordion-content">
-                                <div class="accordion-inner">
-                                    <h5 class="text-teal mb-2">ASSEMBLEIA GERAL</h5>
-                                    <table class="orgaos-table">
-                                        <tr><th>NOME</th><th>FUNÇÃO</th></tr>
-                                        <tr><td>MANUEL AGOSTINHO BORGES MACHADO</td><td>PRESIDENTE</td></tr>
-                                        <tr><td>ANTÓNIO RAPOSO MOTA</td><td>1º SECRETÁRIO</td></tr>
-                                        <tr><td>JOSÉ MANUEL LAMEIRA CARREIRA</td><td>2º SECRETÁRIO</td></tr>
-                                    </table>
-                                    
-                                    <h5 class="text-teal mb-2 mt-4">DIREÇÃO</h5>
-                                    <table class="orgaos-table">
-                                        <tr><th>NOME</th><th>FUNÇÃO</th></tr>
-                                        <tr><td>CARLOS SILVINO RODRIGUES MACHADO</td><td>PRESIDENTE</td></tr>
-                                        <tr><td>LETÍCIA LAMEIRA CARRIL FARIA</td><td>VICE-PRESIDENTE</td></tr>
-                                        <tr><td>PEDRO JORGE CARREIRA CARRIL</td><td>SECRETÁRIO</td></tr>
-                                        <tr><td>MARIA ELISABETE LAMEIRA CARREIRA</td><td>TESOUREIRA</td></tr>
-                                        <tr><td>JOANA FILIPA COSTA BORGES</td><td>VOGAL</td></tr>
-                                    </table>
-                                    
-                                    <h5 class="text-teal mb-2 mt-4">CONSELHO FISCAL</h5>
-                                    <table class="orgaos-table">
-                                        <tr><th>NOME</th><th>FUNÇÃO</th></tr>
-                                        <tr><td>MARIA ELISABETE DIAS MACHADO BARREIRO</td><td>PRESIDENTE</td></tr>
-                                        <tr><td>SANDRA CRISTINA CARRIL DA COSTA</td><td>1º VOGAL</td></tr>
-                                        <tr><td>JOSÉ MANUEL LAMEIRA RODRIGUES</td><td>2º VOGAL</td></tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                         <div class="accordion-item">
                             <button class="accordion-header">Documentos Oficiais / Transparência <span class="acc-icon"><i class="fa-solid fa-chevron-down"></i></span></button>
                             <div class="accordion-content">
@@ -635,6 +609,25 @@
             <div class="modal-body">
                 <p>Este documento está atualmente a ser atualizado para garantir a máxima transparência e conformidade com as normas em vigor. Será disponibilizado muito em breve.</p>
                 <p>O <strong>Centro Social Nossa Senhora do Extremo</strong> tem como prioridade a segurança e a privacidade de todos os seus utentes e parceiros.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Órgãos Sociais Modal -->
+    <div class="custom-modal-overlay" id="orgaosModal">
+        <div class="custom-modal" style="max-width: 800px; width: 95%;">
+            <button class="close-modal" id="closeOrgaosModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <i class="fa-solid fa-users modal-icon pulse"></i>
+                <h3 class="serif-title text-navy">Órgãos Sociais</h3>
+            </div>
+            <div class="modal-body text-center">
+                <div id="orgaosModalPlaceholder" style="display: none; padding: 40px 20px; border: 2px dashed var(--border-color); border-radius: 8px;">
+                    <i class="fa-regular fa-image" style="font-size: 3rem; color: var(--text-light); margin-bottom: 15px; display: block;"></i>
+                    <p style="color: var(--text-main); font-weight: 500; margin-bottom: 5px;">Imagem dos Órgãos Sociais em atualização</p>
+                    <span style="font-size: 0.85rem; color: var(--text-light); display: block;">Por favor, adicione a imagem <strong>orgaos_sociais.png</strong> na pasta <strong>images/</strong>.</span>
+                </div>
+                <img id="orgaosModalImg" src="images/orgaos_sociais.png" alt="Órgãos Sociais" style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
             </div>
         </div>
     </div>
