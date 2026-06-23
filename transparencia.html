@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência & Documentos Oficiais - CSNSE</title>
+    <meta name="description" content="Área de transparência do Centro Social Nossa Senhora do Extremo. Consulte os nossos relatórios de contas, benchmarking, níveis de satisfação e planos de atividades.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom Styles for subpages */
+        .subpage-hero {
+            background-color: var(--navy);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--text-white);
+            position: relative;
+            overflow: hidden;
+        }
+        .subpage-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(13,71,94,0.95) 0%, rgba(9,45,59,0.9) 100%);
+            z-index: 1;
+        }
+        .subpage-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .subpage-title {
+            font-size: 3rem;
+            color: var(--text-white);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+        }
+        .breadcrumbs {
+            font-size: 0.9rem;
+            color: var(--teal);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .breadcrumbs a {
+            color: var(--text-white);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        .breadcrumbs a:hover {
+            color: var(--teal);
+            opacity: 1;
+        }
+        .docs-section {
+            padding: 80px 0;
+        }
+        .doc-card-premium {
+            background: var(--bg-white);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--teal);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .doc-card-premium:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .doc-card-icon {
+            font-size: 2.2rem;
+            color: var(--teal);
+            margin-bottom: 20px;
+        }
+        .doc-card-title {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+        .doc-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        .doc-links-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .doc-link-item a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--navy);
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 10px 14px;
+            background-color: var(--bg-light);
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+        .doc-link-item a:hover {
+            background-color: var(--teal-light);
+            color: var(--teal-dark);
+        }
+        .doc-link-item i {
+            color: var(--teal);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header Info -->
+    <div class="header-info-bar">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="CSNSE Logo" class="logo-img" style="height: 110px;">
+            </a>
+            
+            <div class="mobile-menu-btn d-block-mobile"><i class="fa-solid fa-bars"></i></div>
+            
+            <div class="header-contact-info d-none-mobile">
+                <div class="info-block">
+                    <strong>+351 259 468 028</strong>
+                    <span>CONTACTO DE APOIO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar-main" id="navbar">
+        <div class="container nav-container">
+            <ul class="nav-links mx-auto">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Instituição</a></li>
+                <li><a href="index.html#services">Respostas Sociais</a></li>
+                <li><a href="index.html#quality">Qualidade</a></li>
+                <li><a href="index.html#faq">Perguntas Frequentes</a></li>
+                <li><a href="index.html#donate">Donativos</a></li>
+                <li><a href="index.html#contact">Contactos</a></li>
+                <li class="active"><a href="transparencia.html">Transparência</a></li>
+                <li><a href="creche.html">Creche</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Subpage Hero -->
+    <div class="subpage-hero">
+        <div class="container subpage-hero-content">
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> &nbsp;/&nbsp; Transparência
+            </div>
+            <h1 class="subpage-title mt-3">Transparência & Documentos Oficiais</h1>
+        </div>
+    </div>
+
+    <!-- Main Documents Grid -->
+    <section class="docs-section bg-light">
+        <div class="container">
+            <div class="cards-grid-3">
+                
+                <!-- Card 1: Relatório, Balanço e Contas -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="doc-card-title">Relatório, Balanço e Contas</h3>
+                    <p class="doc-card-desc">Documentos de prestação de contas anuais relativos à gestão económico-financeira da nossa Instituição.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/CONTAS/relatoriocontas-2024.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Exercício de 2024 (PDF)
+                            </a>
+                        </li>
+                        <li class="doc-link-item">
+                            <a href="pasta%201/CONTAS/relatoriocontas-2023.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Exercício de 2023 (PDF)
+                            </a>
+                        </li>
+                        <li class="doc-link-item">
+                            <a href="pasta%201/CONTAS/relatoriocontas-2022.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Exercício de 2022 (PDF)
+                            </a>
+                        </li>
+                        <li class="doc-link-item">
+                            <a href="pasta%201/CONTAS/relatorio-balanco-contas-2021.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Exercício de 2021 (PDF)
+                            </a>
+                        </li>
+                        <li class="doc-link-item">
+                            <a href="pasta%201/CONTAS/relatorio-balanco-contas-2020.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Exercício de 2020 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Níveis de Satisfação -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-smile-beam"></i></div>
+                    <h3 class="doc-card-title">Níveis de Satisfação</h3>
+                    <p class="doc-card-desc">Resultados dos inquéritos aplicados às partes interessadas (utentes, colaboradores e parceiros) sobre a qualidade dos nossos serviços.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/niuveis-satisfacoaao-2025.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Níveis de Satisfação 2024/2025 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Benchmarking Social -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="doc-card-title">Benchmarking Social</h3>
+                    <p class="doc-card-desc">Relatórios comparativos de desempenho e boas práticas sociais no setor solidário.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/relatoriobenchmarking2024site.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Benchmarking 2024 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Planos e Atividades (PAA) -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <h3 class="doc-card-title">Programa Anual de Atividades</h3>
+                    <p class="doc-card-desc">Programa Anual de Atividades (PAA) desenhado para promover a integração da instituição na comunidade local.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/paa-comunidade-2025.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> PAA Comunidade 2025 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 5: Desenvolvimento Pessoal (PADPS) -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="doc-card-title">Desenvolvimento Pessoal (PADPS)</h3>
+                    <p class="doc-card-desc">Plano de Atividades de Desenvolvimento Pessoal e Sociocultural para a promoção da autonomia dos nossos utentes.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/padps-2025.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> PADPS 2025 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 6: Gestão da Qualidade e Ambiente -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3 class="doc-card-title">Qualidade e Ambiente</h3>
+                    <p class="doc-card-desc">Linhas programáticas e de responsabilidade ambiental que orientam a qualidade do CSNSE.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/programadegestaodaqualidadeeambiente2025.png" target="_blank">
+                                <i class="fa-solid fa-file-image"></i> Gestão da Qualidade e Ambiente 2025 (Imagem)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 7: Planeamento Estratégico -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3 class="doc-card-title">Plano Estratégico</h3>
+                    <p class="doc-card-desc">Diretrizes gerais, missão a longo prazo e objetivos de desenvolvimento para a instituição.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/plano-estrategico-2023.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Plano Estratégico 2023-2026 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 8: Inquéritos e Comunidade -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+                    <h3 class="doc-card-title">Opinião da Comunidade</h3>
+                    <p class="doc-card-desc">Minuta do inquérito utilizado para avaliar o impacto social e obter opiniões da comunidade sobre a instituição.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/inquerito_opiniao_comunidade.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Inquérito de Opinião (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 9: Financiamento Europeu -->
+                <div class="doc-card-premium">
+                    <div class="doc-card-icon"><i class="fa-solid fa-euro-sign"></i></div>
+                    <h3 class="doc-card-title">Financiamento / Norte 2020</h3>
+                    <p class="doc-card-desc">Cofinanciamento público e comunitário das nossas atividades e desenvolvimento de infraestruturas.</p>
+                    <ul class="doc-links-list">
+                        <li class="doc-link-item">
+                            <a href="pasta%201/norte-2020.pdf" target="_blank">
+                                <i class="fa-solid fa-file-pdf"></i> Financiamentos / Norte 2020 (PDF)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer bg-navy text-light">
+        <div class="container mt-5">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo text-white d-flex align-items-center mb-4" style="gap: 6px;">
+                        <img src="images/logo-tree-white.png" alt="CSNSE Logo" class="footer-logo-img" style="height: 40px;">
+                        <span class="logo-text serif-title text-white">CSNS<span class="fw-300">Extremo</span></span>
+                    </a>
+                    <p class="mb-4 text-light pe-4">A promover a qualidade de vida, com dedicação, humanidade e partilhando com muito amor desde 2003.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/CentroSocialNSExtremo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="serif-title text-white mb-4 footer-heading">Área de Implementação</h4>
+                    <ul class="footer-links">
+                        <li><strong>Tourencinho</strong> &mdash; Sede e Lar N.S. do Extremo<br><span class="text-sm">Tlf: 259 468 028</span></li>
+                        <li><strong>Ferreirinho</strong> &mdash; Lar Pe. Manuel do Couto<br><span class="text-sm">Tlf: [Inserir Contacto]</span></li>
+                        <li><strong>Creche Nossa Senhora das Dores</strong><br><span class="text-sm">Tlf: [Inserir Contacto]</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="serif-title text-white mb-4 footer-heading">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Quem Somos</a></li>
+                        <li><a href="index.html#services">Respostas Sociais</a></li>
+                        <li><a href="index.html#quality">Política de Qualidade</a></li>
+                        <li><a href="index.html#donate">Donativos</a></li>
+                        <li><a href="transparencia.html">Transparência</a></li>
+                        <li><a href="creche.html">Creche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="serif-title text-white mb-4 footer-heading">Sede & Contactos</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <div class="fc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>Morada: Rua dos Xudreiros nº 10,<br>Tourencinho</div>
+                        </li>
+                        <li>
+                            <div class="fc-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>Telefone: 259 468 028</div>
+                        </li>
+                        <li>
+                            <div class="fc-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>Email: geral@csns-extremo.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom mt-5">
+                <p>&copy; 2026 Centro Social Nossa Senhora do Extremo. IPSS. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#" class="legal-modal-trigger" data-title="Políticas de Utilização">Políticas de Utilização</a>
+                    <a href="#" class="legal-modal-trigger" data-title="Políticas de Privacidade">Políticas de Privacidade</a>
+                    <a href="#" class="legal-modal-trigger" data-title="RGPD">RGPD</a>
+                    <a href="https://www.livroreclamacoes.pt/" target="_blank">Livro de Reclamações Online</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modal -->
+    <div class="custom-modal-overlay" id="legalModal">
+        <div class="custom-modal">
+            <button class="close-modal" id="closeLegalModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <i class="fa-solid fa-file-shield modal-icon pulse"></i>
+                <h3 class="serif-title text-navy" id="legalModalTitle">Documento</h3>
+            </div>
+            <div class="modal-body">
+                <p>Este documento está atualmente a ser atualizado para garantir a máxima transparência e conformidade com as normas em vigor. Será disponibilizado muito em breve.</p>
+                <p>O <strong>Centro Social Nossa Senhora do Extremo</strong> tem como prioridade a segurança e a privacidade de todos os seus utentes e parceiros.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

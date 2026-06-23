@@ -273,3 +273,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Informativo Modal Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const openInfoBtn = document.getElementById('openInformativoModal');
+    const infoModal = document.getElementById('informativoModal');
+    const closeInfoBtn = document.getElementById('closeInformativoModal');
+
+    if (openInfoBtn && infoModal && closeInfoBtn) {
+        openInfoBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            infoModal.classList.add('active');
+        });
+
+        closeInfoBtn.addEventListener('click', () => {
+            infoModal.classList.remove('active');
+        });
+
+        infoModal.addEventListener('click', (e) => {
+            if (e.target === infoModal) {
+                infoModal.classList.remove('active');
+            }
+        });
+    }
+});
