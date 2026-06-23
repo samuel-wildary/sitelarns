@@ -1795,3 +1795,13 @@ p {
 .doc-list li { margin-bottom: 10px; }
 .doc-list a { color: var(--teal); font-weight: 500; text-decoration: none; display: flex; align-items: center; gap: 8px; }
 .doc-list a:hover { color: var(--navy); }
+
+/* Responsive adjustments for medium screens to fit the longer menu item */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+}
